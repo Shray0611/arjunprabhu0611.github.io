@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="portfoliohome.css">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/364d6ad202.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="ContactPortfoli.css">
+</head>
+
+<body>
+    <header id="header">
+        <nav class="container">
+            <div class="header-elements cross"><i class="fas fa-times"></i></div>
+
+            <div class="header-elements" id="home"><a class="header-reference" href="index.html">Home</a></div>
+            <div class="header-elements"><a class="header-reference" href="AboutMyself.html">About Myself</a></div>
+            <div class="header-elements"><a class="header-reference" href="projectsPortfolio.html">Projects</a></div>
+            <div class="header-elements"><a class="header-reference" href="ContactPortfoli.html">Contact</a></div>
+        </nav>
+    </header>
+    <div class="bar"><i class="fas fa-bars"></i></div>
+    <div>
+        <h1>Contact Me!</h1>
+    </div>
+    <div class="container-3">
+
+        <div class="email-contact"><i class="fas fa-envelope "></i>arjunprabhu0611@gmail.com</div>
+        <div class="phone-contact"><i class="fas fa-phone "></i>+91-9136877038</div>
+
+    </div>
+    <section>
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full-Name" id="name" class="item" autocomplete="off">
+                    <div class="err-txt">Name Cannot be Empty!</div>
+                </div>
+                <div class="input-field">
+                    <input type="email" placeholder="Email-Address" id="email" class="item" autocomplete="off">
+                    <div class="err-txt">Email-Address Cannot be Empty!</div>
+                </div>
+
+            </div>
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Phone-Number" id="phone" class="item" autocomplete="off">
+                    <div class="err-txt">Phone Number Cannot be Empty!</div>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Subject" id="subject" class="item" autocomplete="off">
+                    <div class="err-txt">Subject Cannot be Empty!</div>
+                </div>
+            </div>
+            <div class="textarea-field">
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Your Message" class="item"
+                    autocomplete="off"></textarea>
+                <div class="err-txt">Message Cannot be Empty!</div>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="ContactPortfolio.js"></script>
+</body>
+
+</html>

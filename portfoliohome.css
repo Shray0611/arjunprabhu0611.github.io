@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(https://media.istockphoto.com/id/498478219/photo/stars-at-night-sky.jpg?b=1&s=612x612&w=0&k=20&c=JtQpCgYYSyiF63fgKDtsa8fSvVhf_QjkSN_Y0gIiICs=);
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header-elements {
+    margin-left: 50px;
+    font-size: 25px;
+    position:relative;
+}
+.header-elements::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:grey;
+    position: absolute;
+    left:0;
+    bottom:-6px;
+    transition: 0.5s;
+}
+.header-elements:hover::after{
+    width:100%;
+}
+
+.bar {
+    display: none; /* Hidden by default */
+    color: white;
+    position: relative;
+    left:5px;
+}
+
+.header-reference {
+    text-decoration: none;
+    color: white;
+}
+
+.heading-1 {
+    color: white;
+    font-size: 50px;
+    margin-top: 150px;
+    margin-left: 50px;
+
+}
+
+.cross {
+    color: white;
+    display: none;
+}
+
+.myself {
+    color: white;
+    font-size: 30px;
+    margin-left: 50px;
+}
+
+.location-icon {
+    color: white;
+    font-size: 25px;
+    margin-left: 50px;
+}
+
+.Mum-span {
+    margin-left: 5px;
+}
+
+.social-icons {
+    font-size: 25px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.social-reference {
+    text-decoration: none;
+    color: white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 15px; /* Space between icons */
+    background-color: grey;
+    margin-left: 15px;
+}
+
+.social-reference:hover {
+    background-color: blue;
+    color: white;
+}
+@media (max-width: 900px) {
+    .container {
+        display: none; 
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        background-color: black;
+        opacity: 0.9;
+    }
+
+    .header-elements {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    .bar {
+        display: block; /* Show bar icon */
+        font-size:30px;
+    }
+}

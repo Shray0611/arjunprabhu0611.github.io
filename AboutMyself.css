@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvZnJtaWxreV93YXlfZ2FsYXh5X3N0YXItaW1hZ2Uta3liZDd1N2QuanBn.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header-elements {
+    margin-left: 50px;
+    font-size: 25px;
+    position: relative;
+}
+
+.header-elements::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: grey;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.header-elements:hover::after {
+    width: 100%;
+}
+
+.bar {
+    display: none;
+    color: white;
+    position: relative;
+    left: 5px;
+    font-size: 30px;
+}
+
+.header-reference {
+    text-decoration: none;
+    color: white;
+}
+
+.cross {
+    color: white;
+    display: none;
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.col-1 h1 {
+    margin-left: 40px;
+}
+
+.myimg img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    padding: 30px 50px 0 80px;
+}
+
+.col2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 2;
+    padding: 20px;
+}
+
+.col2 h2 {
+    color: green;
+    text-align: center;
+}
+
+.col2 p {
+    font-size: 20px;
+    margin-bottom: 20px;
+   
+}
+
+
+
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.skill-section1,
+.section2 {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.skill-section1 h3,
+.section2 h3 {
+    font-size: 25px;
+    color: green;
+    padding-top: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+@media (max-width:900px) {
+    .container {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        background-color: black;
+        opacity: 0.9;
+    }
+
+    .header-elements {
+        margin-left: 10px;
+        margin-bottom: 10px;
+        font-size: 30px;
+        padding: 5px;
+    }
+
+    .bar {
+        display: block;
+        font-size: 30px;
+    }
+
+    .container-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .col-1 {
+        width: 100%;
+        align-items: center;
+    }
+
+    .col-1 h1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .myimg img {
+        width: 200px;
+        height: 200px;
+        padding: 10px 0;
+    }
+
+    .col2 {
+        align-items: center;
+        padding: 10px;
+    }
+
+    .col2 p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .col2 p::after {
+        width: 100%;
+    }
+
+    .skill-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-section1,
+    .section2 {
+        margin-right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .skill-section1 ul,
+    .section2 ul {
+        padding-left: 0;
+    }
+
+    ul li {
+        font-size: 18px;
+    }
+    .col2 p{
+        text-align:center;
+    }
+}
